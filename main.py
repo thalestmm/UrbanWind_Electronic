@@ -3,7 +3,7 @@ import urequests
 import utime
 
 # === CONFIGURATION ===
-REFRESH_RATE_HZ = 10
+REFRESH_RATE_HZ = 1
 NUM_MAGNETS = 4
 # TODO: Check Pin attached to hall sensor
 HALL_PIN = Pin(15, Pin.IN, Pin.PULL_UP)  # GPIO 15 with pull-up resistor TODO: Check pull-up
@@ -27,6 +27,9 @@ def calc_rpm(timer):
 def rpm_to_ma(rpm: int):
     # TODO: Implement
     pass
+SSID = 'MyMacHotspot'
+PASSWORD = 'my_password'
+SERVER_URL = 'http://192.168.2.1:3000/rpm'  # Common IP for Mac-created hotspots
 
 # TODO: Send data to server
 # === SETUP ===
