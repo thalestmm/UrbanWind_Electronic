@@ -6,8 +6,8 @@ import json
 import network
 
 # Wi-Fi setup
-SSID = "RedeCASD-H8I-110"
-PASSWORD = "borarede"
+SSID = "your-ssid"
+PASSWORD = "your-password"
 
 # Initialize WLAN interface
 wlan = network.WLAN(network.STA_IF)
